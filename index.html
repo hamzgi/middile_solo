@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 개인 자기소개</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 다크모드 토글 버튼 -->
+    <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <i class="fas fa-code"></i> Portfolio
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">홈</a></li>
+                    <li><a href="#about" class="nav-link">소개</a></li>
+                    <li><a href="#skills" class="nav-link">기술</a></li>
+                    <li><a href="#projects" class="nav-link">프로젝트</a></li>
+                    <li><a href="#contact" class="nav-link">연락처</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">안녕하세요!</h1>
+                    <p class="hero-subtitle">저는 웹 개발자입니다</p>
+                    <p class="hero-description">
+                        현대적인 웹 기술을 활용하여 사용자 중심의 서비스를 만드는 것을 좋아합니다.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                        <a href="#contact" class="btn btn-secondary">연락하기</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">소개</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            웹 개발에 열정을 가지고 있는 개발자입니다. 
+                            새로운 기술을 배우고 적용하는 것을 즐기며, 
+                            사용자 경험을 최우선으로 생각합니다.
+                        </p>
+                        <p>
+                            HTML5, CSS3, JavaScript 등 웹 기초부터 
+                            현대적인 프레임워크까지 다양한 기술을 활용하여 
+                            프로젝트를 진행해왔습니다.
+                        </p>
+                        <p>
+                            항상 배움의 자세로 성장하고 있으며, 
+                            함께 문제를 해결하는 것을 좋아합니다.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">프로젝트</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">연간 경험</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">열정</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">기술 스택</h2>
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>시맨틱 마크업</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>반응형 디자인</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>동적 기능 구현</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <p>컴포넌트 개발</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>백엔드 개발</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQL</h3>
+                        <p>데이터베이스</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">프로젝트</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce 웹사이트</h3>
+                            <p>
+                                React와 Node.js를 사용한 전체 스택 
+                                전자상거래 플랫폼 개발
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link">자세히 보기</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>블로그 플랫폼</h3>
+                            <p>
+                                사용자가 글을 작성하고 공유할 수 있는 
+                                커뮤니티 블로그 플랫폼
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">자세히 보기</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>할일 관리 앱</h3>
+                            <p>
+                                할일을 효율적으로 관리하고 우선순위를 
+                                지정할 수 있는 생산성 도구
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">LocalStorage</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link">자세히 보기</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>데이터 시각화 대시보드</h3>
+                            <p>
+                                실시간 데이터를 그래프와 차트로 시각화하는 
+                                관리자 대시보드
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">API</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <a href="#" class="project-link">자세히 보기</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>영상 스트리밍 서비스</h3>
+                            <p>
+                                사용자가 영상을 업로드하고 시청할 수 있는 
+                                플랫폼 개발
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Video API</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">FFmpeg</span>
+                            </div>
+                            <a href="#" class="project-link">자세히 보기</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>모바일 앱 개발</h3>
+                            <p>
+                                React Native를 사용한 iOS/Android 
+                                크로스 플랫폼 모바일 애플리케이션
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Cross-platform</span>
+                            </div>
+                            <a href="#" class="project-link">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">연락처</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">
+                        프로젝트 제안이나 협력 기회가 있으신가요?<br>
+                        아래 방법으로 저에게 연락해주세요!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>이메일</h3>
+                            <p>your.email@example.com</p>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <p>github.com/yourprofile</p>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/yourprofile</p>
+                        </a>
+                        <a href="tel:+82-10-1234-5678" class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>전화</h3>
+                            <p>+82-10-1234-5678</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
