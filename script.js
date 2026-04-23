@@ -34,6 +34,16 @@ function updateThemeIcon() {
 // ==================== 모바일 메뉴 토글 ====================
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('.nav-menu');
+
+// 햄버거 메뉴 클릭 이벤트
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// ==================== 모바일 메뉴 토글 ====================
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
 // 햄버거 메뉴 클릭
