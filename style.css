@@ -663,6 +663,7 @@ footer {
 .mb-lg { margin-bottom: var(--spacing-lg); }
 .mb-xl { margin-bottom: var(--spacing-xl); }
 .mt-0 { margin-top: 0; }
+.mt-sm { margin-top: var(--spacing-sm); }
 .ml-lg { margin-left: var(--spacing-lg); }
 .p-xl { padding: var(--spacing-xl); }
 .w-full { width: 100%; }
