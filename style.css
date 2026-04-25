@@ -652,6 +652,89 @@ footer {
   gap: var(--spacing-lg);
 }
 
+/* =============================================
+   UTILITY & COMPONENT CLASSES (Extracted from inline styles)
+   ============================================= */
+
+/* Margins */
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+.mt-0 { margin-top: 0; }
+.ml-lg { margin-left: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+.w-full { width: 100%; }
+.text-center { text-align: center; }
+
+/* Flexbox */
+.flex-column-gap-lg { display: flex; flex-direction: column; gap: var(--spacing-lg); }
+.flex-row-gap-sm { display: flex; gap: var(--spacing-sm); }
+
+/* Typography */
+.text-secondary { color: var(--text-secondary); }
+.text-primary { color: var(--text-primary); }
+.line-height-lg { line-height: 1.8; }
+.font-sm { font-size: var(--font-size-sm); }
+
+/* Components */
+.back-link {
+  display: inline-block;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.title-large {
+  font-size: var(--font-size-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-avatar-large {
+  border-radius: var(--radius-md);
+  font-size: 80px;
+}
+
+.list-inside-no-padding {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.btn-small {
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.icon-img-md {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.cert-card-layout {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.cert-img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cert-content {
+  flex: 1;
+  min-width: 200px;
+}
+
 .team-info-card {
   background-color: var(--bg-secondary);
   padding: var(--spacing-lg);
