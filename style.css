@@ -576,6 +576,23 @@ footer {
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-xl);
   box-shadow: var(--shadow-md);
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-project-card-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.team-project-img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
 }
 
 .team-project-title {
