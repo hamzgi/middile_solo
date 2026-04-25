@@ -116,6 +116,13 @@ body {
   font-weight: bold;
   color: var(--text-primary);
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  color: var(--text-secondary);
 }
 
 .navbar-menu {
@@ -129,11 +136,33 @@ body {
   color: var(--text-primary);
   text-decoration: none;
   font-size: var(--font-size-sm);
-  transition: color 0.3s ease;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--text-secondary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .navbar-menu a:hover {
   color: var(--text-secondary);
+  transform: translateY(-2px);
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
 }
 
 /* =============================================

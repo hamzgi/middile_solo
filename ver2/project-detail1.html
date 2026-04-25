@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Project Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Dark Mode Toggle (Checkbox Hack) -->
+  <input type="checkbox" id="darkModeToggle">
+
+  <!-- Floating Mode Toggle Button -->
+  <label for="darkModeToggle" class="floating-toggle"></label>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">MyPortfolio</a>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <a href="project.html" style="display: inline-block; margin-bottom: var(--spacing-lg); color: var(--text-secondary); text-decoration: none; font-weight: 600;">← 프로젝트 목록으로 돌아가기</a>
+    
+    <!-- Hero Card -->
+    <div class="card hero-card" style="margin-bottom: var(--spacing-xl);">
+      <div class="hero-content">
+        <div class="project-badges" style="margin-bottom: var(--spacing-sm);">
+          <span class="badge">web</span>
+          <span class="badge">개발 중</span>
+        </div>
+        <h1 class="title" style="margin-bottom: var(--spacing-md); color: var(--text-primary); font-size: var(--font-size-2xl);">반응형 포트폴리오 웹사이트</h1>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--spacing-lg);">
+          HTML과 CSS, JS를 이용하여 만든 반응형 포트폴리오 웹사이트입니다. 다크모드와 라이트모드를 지원합니다. 
+          아직 미완성이고 추후에 이런식으로 포트폴리오 페이지를 만들어 보고싶어 만들어봤습니다.
+        </p>
+        <div class="project-tags" style="margin-bottom: var(--spacing-lg);">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive</span>
+        </div>
+        <div class="hero-buttons">
+          <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub 저장소 가기</a>
+        </div>
+      </div>
+      <div class="hero-avatar" style="border-radius: var(--radius-md); font-size: 80px;">
+        🌐
+      </div>
+    </div>
+
+    <!-- Project Features -->
+    <h2 class="section-title">주요 기능 및 특징</h2>
+    <div class="team-info-grid" style="margin-bottom: var(--spacing-xl);">
+      <div class="team-info-card">
+        <h3 class="team-info-title">✨ 다크모드 지원</h3>
+        <p class="team-info-content">
+          CSS Variables와 Checkbox Hack을 이용하여 자바스크립트 의존성을 최소화한 라이트/다크 모드 전환 기능을 구현했습니다.
+        </p>
+      </div>
+      <div class="team-info-card">
+        <h3 class="team-info-title">📱 반응형 디자인</h3>
+        <p class="team-info-content">
+          CSS Flexbox와 Grid, 미디어 쿼리를 적극 활용하여 데스크탑, 태블릿, 모바일 등 다양한 기기에서 최적화된 레이아웃을 제공합니다.
+        </p>
+      </div>
+      <div class="team-info-card">
+        <h3 class="team-info-title">🎨 모던한 UI/UX</h3>
+        <p class="team-info-content">
+          일관성 있는 Design Tokens(색상, 여백, 곡률 등)를 사용하여 깔끔하고 세련된 인터페이스를 구성하고 마이크로 인터랙션을 추가했습니다.
+        </p>
+      </div>
+      <div class="team-info-card">
+        <h3 class="team-info-title">🔗 모듈화된 페이지 구조</h3>
+        <p class="team-info-content">
+          각 목적(Home, About, Project, Team, Contact)에 맞게 페이지를 분리하여 정보의 가독성을 높이고 유지보수가 용이하도록 설계했습니다.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Learnings -->
+    <h2 class="section-title">배운 점 및 아쉬운 점</h2>
+    <div class="card" style="margin-bottom: var(--spacing-xl); line-height: 1.8;">
+      <h3 style="margin-bottom: var(--spacing-sm); color: var(--text-primary);">배운 점</h3>
+      <ul style="margin-left: var(--spacing-lg); margin-bottom: var(--spacing-lg); color: var(--text-secondary);">
+        <li>CSS 변수(:root)를 활용한 효율적인 테마 관리 방법을 습득했습니다.</li>
+        <li>모바일 환경을 고려한 미디어 쿼리 작성과 Flexbox/Grid의 실무적인 활용법을 배웠습니다.</li>
+        <li>사용자의 인터랙션(Hover, Transition)이 UI의 완성도에 미치는 영향을 직접 체감했습니다.</li>
+      </ul>
+      
+      <h3 style="margin-bottom: var(--spacing-sm); color: var(--text-primary);">아쉬운 점 및 추후 계획</h3>
+      <ul style="margin-left: var(--spacing-lg); color: var(--text-secondary);">
+        <li>백엔드나 DB가 연결되지 않은 정적 페이지라 연락처(Contact) 폼이 실제로 작동하지 않는 점이 아쉽습니다.</li>
+        <li>추후 React 같은 프론트엔드 프레임워크를 도입하여 재사용성을 극대화하고, 실제 데이터베이스를 연동해보고 싶습니다.</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">© 2026 MyPortfolio</div>
+      <div class="footer-right">
+        <a href="https://github.com/hamzgi" target="_blank" class="icon-button"><img src="img/github.png"
+            alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/%ED%98%95%EC%A7%84-%EB%B0%95-b14102368/" target="_blank"
+          class="icon-button"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dark Mode Persistence Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
