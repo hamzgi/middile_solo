@@ -706,10 +706,16 @@ footer {
   font-size: var(--font-size-sm);
   color: var(--text-primary);
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  display: inline-block;
+  margin-top: 4px;
 }
 
 .contact-info-value:hover {
   color: var(--text-secondary);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .contact-socials {
